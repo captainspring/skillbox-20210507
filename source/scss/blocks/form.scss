@@ -3,8 +3,8 @@
 
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 15px 26px 14px;
+  margin-bottom: 18px;
+  padding: 15px 28px;
   font-size: 15px;
   line-height: 28px;
   color: $blue-grey;
@@ -12,7 +12,7 @@
   border: 2px solid $grey;
 
   &:last-of-type {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
   }
 
   &::placeholder {
@@ -23,7 +23,7 @@
 
 .form__checkbox-container {
   position: relative;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 
 .form__checkbox {
@@ -41,6 +41,7 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
+  padding-top: 1px;
   padding-left: 43px;
   font-size: 14px;
   line-height: 21px;
@@ -58,10 +59,26 @@
     background-color: $grey-light;
     border: 2px solid $grey;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    display: none;
+    width: 14px;
+    height: 11px;
+    background-image: url("../../img/icon-check.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .form__checkbox:focus-visible + .form__label {
   outline: 2px solid $blue;
+}
+
+.form__checkbox:checked + .form__label::after {
+  display: block;
 }
 
 .form__link {
