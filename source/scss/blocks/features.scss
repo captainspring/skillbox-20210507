@@ -1,0 +1,9 @@
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  @include font("Open Sans", 400);
+
+  color: $blue-grey;
+}

@@ -1,0 +1,21 @@
+.register {
+  background-color: $grey-light;
+}
+
+.register__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.register__info-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: $blue-grey;
+}
+
+.register__info-highlight {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: $blue;
+}

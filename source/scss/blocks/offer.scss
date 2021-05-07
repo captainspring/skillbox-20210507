@@ -1,0 +1,27 @@
+.offer {
+  color: $white;
+  background-color: $black;
+}
+
+.offer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.offer__percent {
+  font-size: 30px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+}
+
+.offer__small-text {
+  @include font-size(15px);
+
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  color: rgba($white, 0.7);
+}

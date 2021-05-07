@@ -1,0 +1,12 @@
+.button {
+  @include font("Open Sans", 600);
+
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $blue;
+  border: 0;
+}

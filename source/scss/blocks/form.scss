@@ -1,0 +1,24 @@
+.form__input {
+  @include font("Open Sans", 400);
+
+  font-size: 15px;
+  line-height: 28px;
+  color: $blue-grey;
+
+  &::placeholder {
+    font: inherit;
+    color: $blue-grey;
+  }
+}
+
+.form__label {
+  @include font("Open Sans", 400);
+
+  font-size: 14px;
+  line-height: 21px;
+  color: $blue-grey;
+}
+
+.form__link {
+  color: $blue;
+}

@@ -1,0 +1,40 @@
+.pricing {
+  color: $white;
+  background-color: $blue;
+}
+
+.pricing__price-item {
+  font-size: 15px;
+  line-height: 18px;
+
+  &--main-offer {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &--old {
+    color: rgba($white, 0.4);
+  }
+}
+
+.pricing__number {
+  @include font("Roboto Slab", 300);
+
+  font-size: 40px;
+  line-height: 53px;
+  letter-spacing: -2px;
+}
+
+.pricing__price-item--main-offer .pricing__number {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 74px;
+}
+
+.pricing__price-item--old .pricing__number {
+  font-size: 36px;
+  line-height: 47px;
+  text-decoration: line-through;
+  color: $white-faded;
+}
