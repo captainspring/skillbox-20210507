@@ -1,17 +1,18 @@
 .features {
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 }
 
 .features__list {
   @include list-reset;
 
-  padding-left: 22px;
+  padding-left: 25px;
 }
 
 .features__item {
   @include font("Open Sans", 400);
 
-  margin-bottom: 12px;
+  position: relative;
+  margin-bottom: 14px;
   font-size: 15px;
   line-height: 26px;
   color: $blue-grey;
@@ -20,7 +21,14 @@
     margin-bottom: 0;
   }
 
-  &::marker {
-    color: $blue;
+  &::before {
+    @include circle(6px);
+
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -25px;
+    display: block;
+    background-color: $blue;
   }
 }
