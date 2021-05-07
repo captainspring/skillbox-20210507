@@ -8,3 +8,8 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin font-size($value) {
+  font-size: $value;
+  line-height: $value;
+}
