@@ -1,1 +1,79 @@
-// index
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Стоимость обучения</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+    <main class="page-main wrapper">
+      <h1 class="page-main__title">Стоимость обучения</h1>
+
+      <div class="page-main__layout">
+        <section class="page-main__section pricing">
+          <h2 class="visually-hidden">Цены</h2>
+
+          <div class="pricing__offer offer">
+            <p class="offer__text">Скидка <span class="offer__percent">40%</span> <span class="offer__small-text">первым 20</span></p>
+          </div>
+
+          <p class="pricing__price-item pricing__price-item--old">
+            <span class="pricing__text">Полная стоимость курса</span>
+            <span class="pricing__number">50 000 ₽</span>
+          </p>
+          <p class="pricing__price-item pricing__price-item--main-offer">
+            <span class="pricing__text">Рассрочка без первого взноса</span>
+            <span class="pricing__number">2 900 ₽</span>
+          </p>
+          <p class="pricing__price-item">
+            <span class="pricing__text">Для первых 20-ти</span>
+            <span class="pricing__number">29 000 ₽</span>
+          </p>
+        </section>
+
+        <section class="page-main__section register">
+          <h2 class="register__title">Запишитесь на курс</h2>
+
+          <div class="register__features features">
+            <h3 class="visually-hidden">Наши преимущества</h3>
+
+            <ul class="features__list">
+              <li class="features__item">Телефон</li>
+              <li class="features__item">Телефон</li>
+              <li class="features__item">Телефон</li>
+              <li class="features__item">Телефон</li>
+            </ul>
+          </div>
+
+          <div class="register__info">
+            <p class="register__dates">Старт курса: <span class="register__info-highlight">7 сентября</span></p>
+            <p class="register__spots-counter">Осталось: <span class="register__info-highlight">19 мест</span></p>
+          </div>
+
+          <form class="register__form form" method="POST" action="index.html">
+            <h3 class="visually-hidden">Заполните форму, чтобы записаться</h3>
+
+            <label class="visually-hidden" for="applicant-name">Ваше имя:</label>
+            <input class="form__input" type="text" id="applicant-name" name="applicant-name" placeholder="Имя">
+
+            <label class="visually-hidden" for="applicant-phone">Ваше имя:</label>
+            <input class="form__input" type="tel" id="applicant-phone" name="applicant-phone" placeholder="Телефон">
+
+            <label class="visually-hidden" for="applicant-email">Ваше имя:</label>
+            <input class="form__input" type="email" id="applicant-email" name="applicant-email" placeholder="Email">
+
+            <div class="form__checkbox-container">
+              <input class="form__checkbox" type="checkbox" id="applicant-data-agreement" name="applicant-data-agreement" checked>
+              <label class="form__label" for="applicant-data-agreement">Я согласен с условиями обработки <a href="#">персональных данных</a></label>
+            </div>
+
+            <button class="form__submit-button" type="submit">Записаться</button>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
