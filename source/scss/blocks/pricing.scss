@@ -1,20 +1,20 @@
 .pricing {
-  padding-bottom: 88px;
+  padding-bottom: 34px;
   color: $white;
   background-color: $blue;
 }
 
 .pricing__offer {
-  @include move-up(-50px);
-
   position: relative;
+  top: -53px;
+  margin-bottom: -53px;
 }
 
 .pricing__price-item {
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
@@ -30,6 +30,9 @@
   }
 
   &--old {
+    position: relative;
+    top: 38px;
+    margin-bottom: 50px;
     color: rgba($white, 0.4);
   }
 }
@@ -37,6 +40,7 @@
 .pricing__text {
   display: block;
   order: 2;
+  margin-bottom: 6px;
 }
 
 .pricing__price-item--old .pricing__text {
@@ -52,15 +56,37 @@
 }
 
 .pricing__price-item--main-offer .pricing__number {
+  margin-bottom: -4px;
+  padding-right: 11px;
   font-weight: 400;
   font-size: 56px;
   line-height: 74px;
 }
 
 .pricing__price-item--old .pricing__number {
+  position: relative;
   order: 2;
+  align-self: center;
   font-size: 36px;
   line-height: 47px;
-  text-decoration: line-through;
-  color: $white-faded;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -5px;
+    display: block;
+    width: 105%;
+    height: 2px;
+    background-color: $white-faded;
+  }
+}
+
+.pricing__rub-sign {
+  fill: $white;
+
+  &--bold {
+    position: relative;
+    left: -3px;
+  }
 }
