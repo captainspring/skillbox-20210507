@@ -2,6 +2,11 @@
   padding-top: 40px;
   padding-bottom: 55px;
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 122px 78px;
+    box-shadow: 0px 2px 24px $grey-shadow;
+  }
 }
 
 .register__title {
@@ -9,10 +14,25 @@
   margin-bottom: 25px;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+  }
 }
 
 .register__info {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 31px;
+    justify-items: end;
+    margin-bottom: 14px;
+  }
 }
 
 .register__info-text {
@@ -24,6 +44,13 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--spots-counter {
+    @media (min-width: $tablet-width) {
+      margin-right: auto;
+      margin-left: 18px;
+    }
   }
 }
 

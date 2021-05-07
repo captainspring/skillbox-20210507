@@ -1,13 +1,25 @@
 .pricing {
+  padding-top: 0;
   padding-bottom: 34px;
   color: $white;
   background-color: $blue;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: $z-index-pricing;
+    padding-bottom: 67px;
+  }
 }
 
 .pricing__offer {
   position: relative;
   top: -53px;
-  margin-bottom: -53px;
+  margin-bottom: -15px;
+
+  @media (min-width: $tablet-width) {
+    top: -20px;
+    margin-bottom: 29px;
+  }
 }
 
 .pricing__price-item {
@@ -23,17 +35,30 @@
     margin-bottom: 0;
   }
 
-  &--main-offer {
-    font-weight: 700;
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 21px;
   }
 
+  &--main-offer {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+
   &--old {
-    position: relative;
-    top: 38px;
-    margin-bottom: 50px;
+    margin-bottom: 12px;
     color: rgba($white, 0.4);
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -45,6 +70,19 @@
 
 .pricing__price-item--old .pricing__text {
   order: 1;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.pricing__price-item--main-offer .pricing__text {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -6px;
+  }
 }
 
 .pricing__number {
@@ -53,6 +91,11 @@
   font-size: 40px;
   line-height: 53px;
   letter-spacing: -2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 66px;
+  }
 }
 
 .pricing__price-item--main-offer .pricing__number {
@@ -61,6 +104,13 @@
   font-weight: 400;
   font-size: 56px;
   line-height: 74px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 18px;
+    font-size: 80px;
+    line-height: 106px;
+  }
 }
 
 .pricing__price-item--old .pricing__number {
@@ -80,13 +130,48 @@
     height: 2px;
     background-color: $white-faded;
   }
+
+  @media (min-width: $tablet-width) {
+    left: -2px;
+    font-size: 38px;
+    line-height: 50px;
+
+    &::before {
+      top: 25px;
+      left: -4px;
+      width: 107%;
+    }
+  }
 }
 
 .pricing__rub-sign {
+  position: relative;
   fill: $white;
 
+  @media (min-width: $tablet-width) {
+    top: -2px;
+    left: -4px;
+    width: 23px;
+    height: 33px;
+  }
+
   &--bold {
-    position: relative;
     left: -3px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -19px;
+      width: 48px;
+      height: 58px;
+    }
+  }
+
+  &--old {
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 0;
+      width: 23px;
+      height: 29px;
+    }
   }
 }

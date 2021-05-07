@@ -21,6 +21,10 @@
     border-right: 55px solid transparent;
     border-top: 15px solid $black;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 17px 11px;
+  }
 }
 
 .offer__text {
@@ -40,6 +44,11 @@
   font-size: 30px;
   line-height: 28px;
   letter-spacing: -0.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+    margin-bottom: 7px;
+  }
 }
 
 .offer__small-text {

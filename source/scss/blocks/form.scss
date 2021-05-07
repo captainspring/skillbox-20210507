@@ -15,6 +15,15 @@
     margin-bottom: 19px;
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    padding: 14px 20px 16px;
+
+    &:last-of-type {
+      margin-bottom: 29px;
+    }
+  }
+
   &::placeholder {
     font: inherit;
     color: $blue-grey;
@@ -24,6 +33,10 @@
 .form__checkbox-container {
   position: relative;
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .form__checkbox {
@@ -32,6 +45,10 @@
   left: 1px;
   display: block;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+  }
 }
 
 .form__label {
@@ -68,8 +85,20 @@
     display: none;
     width: 14px;
     height: 11px;
-    background-image: url("../../img/icon-check.svg");
+    background-image: url("../../img/icon-check-blue.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+
+    &::before {
+      top: 1px;
+    }
+
+    &::after {
+      top: 8px;
+    }
   }
 }
 
@@ -77,8 +106,21 @@
   outline: 2px solid $blue;
 }
 
-.form__checkbox:checked + .form__label::after {
-  display: block;
+.form__checkbox:checked + .form__label {
+  &::after {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-color: $blue;
+      border-color: $blue;
+    }
+
+    &::after {
+      background-image: url("../../img/icon-check-white.svg");
+    }
+  }
 }
 
 .form__link {

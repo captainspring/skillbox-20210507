@@ -1,11 +1,19 @@
 .features {
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .features__list {
   @include list-reset;
 
   padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 24px;
+  }
 }
 
 .features__item {
