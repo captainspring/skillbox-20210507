@@ -13,3 +13,8 @@
   font-size: $value;
   line-height: $value;
 }
+
+@mixin move-up($value) {
+  top: $value;
+  margin-bottom: $value;
+}
