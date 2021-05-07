@@ -5,6 +5,7 @@
     url("../../fonts/roboto-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     url("../../fonts/roboto-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 // Roboto Slab
@@ -22,14 +24,16 @@
     url("../../fonts/robotoslab-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../../fonts/robotoslab-light.woff2") fornat("woff2"),
+  src: url("../../fonts/robotoslab-light.woff2") format("woff2"),
     url("../../fonts/robotoslab-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 // Open Sans
@@ -39,6 +43,7 @@
     url("../../fonts/opensans-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -47,4 +52,5 @@
     url("../../fonts/opensans-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
