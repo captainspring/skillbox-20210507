@@ -1,0 +1,10 @@
+@mixin font($font-name, $font-weight) {
+  font-family: $font-name, "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: $font-weight;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+}

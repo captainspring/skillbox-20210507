@@ -1,4 +1,35 @@
-// Global styles
+// Global styles & normalizing
+html {
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button[type="submit"] {
+  text-transform: none;
+  appearance: button;
+}
+
+button[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 a {
   text-decoration: none;
 }
