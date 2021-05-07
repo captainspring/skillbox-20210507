@@ -1,9 +1,26 @@
+.features {
+  margin-bottom: 28px;
+}
+
 .features__list {
   @include list-reset;
+
+  padding-left: 22px;
 }
 
 .features__item {
   @include font("Open Sans", 400);
 
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 26px;
   color: $blue-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::marker {
+    color: $blue;
+  }
 }

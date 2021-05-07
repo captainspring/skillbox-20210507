@@ -1,17 +1,27 @@
 .offer {
+  box-sizing: border-box;
+  width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 21px 18px 8px 20px;
   color: $white;
   background-color: $black;
 }
 
 .offer__text {
+  margin: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .offer__percent {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 3px;
   font-size: 30px;
   line-height: 28px;
   letter-spacing: -0.5px;
@@ -20,6 +30,7 @@
 .offer__small-text {
   @include font-size(15px);
 
+  display: block;
   font-weight: 400;
   letter-spacing: -0.5px;
   text-transform: none;

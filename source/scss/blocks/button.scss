@@ -1,6 +1,9 @@
 .button {
   @include font("Open Sans", 600);
 
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 1px;
@@ -9,4 +12,5 @@
   color: $white;
   background-color: $blue;
   border: 0;
+  cursor: pointer;
 }

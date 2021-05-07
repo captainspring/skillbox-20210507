@@ -1,11 +1,27 @@
 .pricing {
+  padding-bottom: 88px;
   color: $white;
   background-color: $blue;
 }
 
+.pricing__offer {
+  @include move-up(-50px);
+
+  position: relative;
+}
+
 .pricing__price-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 23px;
   font-size: 15px;
   line-height: 18px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--main-offer {
     font-weight: 700;
@@ -16,6 +32,15 @@
   &--old {
     color: rgba($white, 0.4);
   }
+}
+
+.pricing__text {
+  display: block;
+  order: 2;
+}
+
+.pricing__price-item--old .pricing__text {
+  order: 1;
 }
 
 .pricing__number {
@@ -33,6 +58,7 @@
 }
 
 .pricing__price-item--old .pricing__number {
+  order: 2;
   font-size: 36px;
   line-height: 47px;
   text-decoration: line-through;
