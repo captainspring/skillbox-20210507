@@ -5,6 +5,10 @@ input {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
+
+  &:focus-visible {
+    outline-color: $blue;
+  }
 }
 
 button[type="submit"] {
@@ -22,6 +26,10 @@ button[type="submit"]:-moz-focusring {
 
 a {
   text-decoration: none;
+
+  &:focus-visible {
+    outline-color: $blue;
+  }
 }
 
 // Visually hidden
