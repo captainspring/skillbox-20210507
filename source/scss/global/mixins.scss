@@ -7,6 +7,7 @@
 @mixin list-reset {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 @mixin font-size($value) {
@@ -14,7 +15,8 @@
   line-height: $value;
 }
 
-@mixin move-up($value) {
-  top: $value;
-  margin-bottom: $value;
+@mixin circle($value) {
+  width: $value;
+  height: $value;
+  border-radius: 50%;
 }
