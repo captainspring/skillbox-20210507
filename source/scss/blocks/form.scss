@@ -105,6 +105,7 @@
     height: 24px;
     background-color: $grey-light;
     border: 2px solid $grey;
+    cursor: pointer;
   }
 
   &::after {
@@ -117,6 +118,7 @@
     height: 11px;
     background-image: url("../../img/icon-check-blue.svg");
     background-repeat: no-repeat;
+    pointer-events: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -167,6 +169,12 @@
 
 .form__link {
   color: $blue;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
 }
 
 .form__submit-button {
