@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .features__list {
@@ -11,7 +15,7 @@
 
   padding-left: 25px;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding-left: 24px;
   }
 }

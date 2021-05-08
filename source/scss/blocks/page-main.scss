@@ -1,9 +1,5 @@
 .page-main {
   letter-spacing: -0.5px;
-
-  @media (min-width: $tablet-width) {
-    padding: 50px 30px 80px;
-  }
 }
 
 .page-main__title {
@@ -15,9 +11,24 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 77px;
+    margin-bottom: 77px;
+    padding: 0;
     font-size: 45px;
     line-height: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    font-size: 55px;
+    line-height: 32px;
+  }
+}
+
+.page-main__layout {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 2px 24px $grey-shadow;
   }
 }
 

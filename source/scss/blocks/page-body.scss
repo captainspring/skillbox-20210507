@@ -5,6 +5,11 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    padding: 50px 30px 80px;
     background-color: $off-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 72px 30px 80px;
   }
 }
