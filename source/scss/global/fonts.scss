@@ -1,8 +1,8 @@
 // Roboto
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/roboto-regular.woff2") format("woff2"),
-    url("../../fonts/roboto-regular.woff") format("woff");
+  src: url("../../fonts/roboto-cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/roboto-cyrillic-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,8 +10,26 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../../fonts/roboto-bold.woff2") format("woff2"),
-    url("../../fonts/roboto-bold.woff") format("woff");
+  src: url("../../fonts/roboto-latin-regular.woff2") format("woff2"),
+    url("../../fonts/roboto-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto-cyrillic-bold.woff2") format("woff2"),
+    url("../../fonts/roboto-cyrillic-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../fonts/roboto-latin-bold.woff2") format("woff2"),
+    url("../../fonts/roboto-latin-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -20,8 +38,8 @@
 // Roboto Slab
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../../fonts/robotoslab-regular.woff2") format("woff2"),
-    url("../../fonts/robotoslab-regular.woff") format("woff");
+  src: url("../../fonts/robotoslab-cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/robotoslab-cyrillic-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -29,8 +47,26 @@
 
 @font-face {
   font-family: "Roboto Slab";
-  src: url("../../fonts/robotoslab-light.woff2") format("woff2"),
-    url("../../fonts/robotoslab-light.woff") format("woff");
+  src: url("../../fonts/robotoslab-latin-regular.woff2") format("woff2"),
+    url("../../fonts/robotoslab-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../fonts/robotoslab-cyrillic-light.woff2") format("woff2"),
+    url("../../fonts/robotoslab-cyrillic-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../../fonts/robotoslab-latin-light.woff2") format("woff2"),
+    url("../../fonts/robotoslab-latin-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -39,8 +75,8 @@
 // Open Sans
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/opensans-regular.woff2") format("woff2"),
-    url("../../fonts/opensans-regular.woff") format("woff");
+  src: url("../../fonts/opensans-cyrillic-regular.woff2") format("woff2"),
+    url("../../fonts/opensans-cyrillic-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,8 +84,26 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../../fonts/opensans-semibold.woff2") format("woff2"),
-    url("../../fonts/opensans-semibold.woff") format("woff");
+  src: url("../../fonts/opensans-latin-regular.woff2") format("woff2"),
+    url("../../fonts/opensans-latin-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans-cyrillic-semibold.woff2") format("woff2"),
+    url("../../fonts/opensans-cyrillic-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/opensans-latin-semibold.woff2") format("woff2"),
+    url("../../fonts/opensans-latin-semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
