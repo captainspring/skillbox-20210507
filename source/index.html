@@ -23,30 +23,32 @@
             <p class="offer__text">Скидка <span class="offer__percent">40%</span> <span class="offer__small-text">первым 20</span></p>
           </div>
 
-          <p class="pricing__price-item pricing__price-item--old">
-            <span class="pricing__text">Полная стоимость курса</span>
-            <span class="pricing__number">50 000
-              <svg class="pricing__rub-sign pricing__rub-sign--old" width="21" height="26" aria-role="img" aria-label="рублей" focusable="false">
-                <use href="img/rub-sprite.svg#rub-faded"></use>
-              </svg>
-            </span>
-          </p>
-          <p class="pricing__price-item pricing__price-item--main-offer">
-            <span class="pricing__text">Рассрочка без первого взноса</span>
-            <span class="pricing__number">2 900
-              <svg class="pricing__rub-sign pricing__rub-sign--bold" width="31" height="41" aria-role="img" aria-label="рублей" focusable="false">
-                <use href="img/rub-sprite.svg#rub-bold"></use>
-              </svg>
-            </span>
-          </p>
-          <p class="pricing__price-item">
-            <span class="pricing__text">Первым 20-ти</span>
-            <span class="pricing__number">29 000
-              <svg class="pricing__rub-sign" width="19" height="29" aria-role="img" aria-label="рублей" focusable="false">
-                <use href="img/rub-sprite.svg#rub-regular"></use>
-              </svg>
-            </span>
-          </p>
+          <ul class="pricing__price-list">
+            <li class="pricing__price-item pricing__price-item--old">
+              <span class="pricing__text">Полная стоимость курса</span>
+              <span class="pricing__number">50 000
+                <svg class="pricing__rub-sign pricing__rub-sign--old" width="21" height="26" aria-role="img" aria-label="рублей" focusable="false">
+                  <use href="img/rub-sprite.svg#rub-faded"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="pricing__price-item pricing__price-item--main-offer">
+              <span class="pricing__text">Рассрочка без первого взноса</span>
+              <span class="pricing__number">2 900
+                <svg class="pricing__rub-sign pricing__rub-sign--bold" width="31" height="41" aria-role="img" aria-label="рублей" focusable="false">
+                  <use href="img/rub-sprite.svg#rub-bold"></use>
+                </svg>
+              </span>
+            </li>
+            <li class="pricing__price-item">
+              <span class="pricing__text">Первым 20-ти</span>
+              <span class="pricing__number">29 000
+                <svg class="pricing__rub-sign" width="19" height="29" aria-role="img" aria-label="рублей" focusable="false">
+                  <use href="img/rub-sprite.svg#rub-regular"></use>
+                </svg>
+              </span>
+            </li>
+          </ul>
         </section>
 
         <section class="page-main__section register">
@@ -64,25 +66,28 @@
           </div>
 
           <div class="register__info">
-            <p class="register__info-text register__info-text--dates">Старт курса<span class="register__text-colon">:</span> <span class="register__info-highlight">7 сентября</span></p>
-            <p class="register__info-text register__info-text--spots-counter">Осталось<span class="register__text-colon">:</span> <span class="register__info-highlight">19 мест</span></p>
+            <p class="register__info-text register__info-text--dates">Старт курса<span class="register__text-colon">:</span> <span class="register__info-highlight">&nbsp;7&nbsp;сентября</span></p>
+            <p class="register__info-text register__info-text--spots-counter">Осталось<span class="register__text-colon">:</span> <span class="register__info-highlight">&nbsp;19&nbsp;мест</span></p>
           </div>
 
           <form class="register__form form" method="POST" action="index.html">
-            <h3 class="visually-hidden">Заполните форму, чтобы записаться</h3>
+            <h3 class="visually-hidden">Форма для записи</h3>
 
-            <label class="visually-hidden" for="applicant-name">Ваше имя:</label>
-            <input class="form__input" type="text" id="applicant-name" name="applicant-name" placeholder="Имя">
+            <fieldset class="form__fieldset">
+              <legend class="visually-hidden">Заполните форму, чтобы записаться</legend>
+              <label class="visually-hidden" for="applicant-name">Ваше имя:</label>
+              <input class="form__input" type="text" id="applicant-name" name="applicant-name" placeholder="Имя">
 
-            <label class="visually-hidden" for="applicant-phone">Ваш телефон:</label>
-            <input class="form__input" type="tel" id="applicant-phone" name="applicant-phone" placeholder="Телефон">
+              <label class="visually-hidden" for="applicant-phone">Ваш телефон:</label>
+              <input class="form__input" type="tel" id="applicant-phone" name="applicant-phone" placeholder="Телефон">
 
-            <label class="visually-hidden" for="applicant-email">Ваш e-mail:</label>
-            <input class="form__input" type="email" id="applicant-email" name="applicant-email" placeholder="Email">
+              <label class="visually-hidden" for="applicant-email">Ваш e-mail:</label>
+              <input class="form__input" type="email" id="applicant-email" name="applicant-email" placeholder="Email">
+            </fieldset>
 
             <div class="form__checkbox-container">
               <input class="form__checkbox" type="checkbox" id="applicant-data-agreement" name="applicant-data-agreement" checked>
-              <label class="form__label" for="applicant-data-agreement">Я согласен с условиями обработки <a class="form__link" href="#">персональных данных</a></label>
+              <label class="form__label" for="applicant-data-agreement">Я согласен с условиями обработки <br class="form__label-break"><a class="form__link" href="#">персональных данных</a></label>
             </div>
 
             <button class="form__submit-button button" type="submit">Записаться</button>
