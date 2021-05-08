@@ -176,6 +176,10 @@
   &:focus {
     color: $black;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .form__submit-button {
