@@ -32,6 +32,14 @@ a {
   }
 }
 
+.wrapper {
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 // Visually hidden
 .visually-hidden {
   position: absolute;
