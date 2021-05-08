@@ -1,7 +1,8 @@
 Тестовое задание для Skillbox
 ---
 
-➡️ [Посмотреть результат в браузере](https://captainspring.github.io/index.html)
+➡️ [Посмотреть результат в браузере](https://captainspring.github.io/index.html)<br/>
+➡️ [Посмотреть репозиторий со сборкой](https://github.com/captainspring/captainspring.github.io)
 
 **ТЗ:**<br/>
 ☑️ вёрстка без использования библиотек;<br/>
@@ -12,4 +13,4 @@
 ☑️ деление на SCSS-компоненты;<br/>
 ☑️ сборка проекта на Gulp;<br/>
 ☑️ локальное подключение шрифтов (скачаны с Google Fonts);<br/>
-☑️ валидация формы на нативном JS;
+☑️ валидация формы на нативном JS.
