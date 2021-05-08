@@ -71,13 +71,14 @@
 
 .form__checkbox {
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 2px;
+  left: 2px;
   display: block;
   outline: none;
 
   @media (min-width: $tablet-width) {
-    top: 2px;
+    top: 4px;
+    left: 4px;
   }
 }
 
@@ -138,7 +139,7 @@
   }
 }
 
-.form__checkbox:focus-visible + .form__label {
+.form__checkbox:focus + .form__label {
   outline: 2px solid $blue;
 }
 
