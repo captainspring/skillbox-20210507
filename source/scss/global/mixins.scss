@@ -20,3 +20,8 @@
   height: $value;
   border-radius: 50%;
 }
+
+@mixin move-up($value) {
+  top: $value;
+  margin-bottom: $value;
+}
